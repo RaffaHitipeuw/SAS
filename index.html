@@ -4,78 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAS</title>
-    
-
-
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        body{
-            background-color: #F9F9F9;
+        main{
+            background-color: #484444;
+            width: 400px;
+            height: 650px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-left: 500px;
+            margin-top: 50px;
         }
-
-        header{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 200px;
+        main img{
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        main .imagee img{
+            border-radius: 15px;
         }
         h1{
-            margin-top: 50px;
-            font-family: inter;
-            color: #333333;
-            font-size: 50px;
-            margin-bottom: 30px;
+            font-family: poppins;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+        h2{
+            color: #057af8;
+            font-size: 25px;
+            font-family: poppins;
+            text-align: center;
+            margin-top: -10px;
         }
         p{
-            font-family: inter;
-            color: grey;
-            font-size: 15px;
-        }
-        .leftimage img{
-            width: 20px;
-            margin-right: 10px;
-            margin-top: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: -10px;
         }
         button{
-            background-color: #027DFE;
-            color: white;
+            background: rgb(0,123,255);
+            background: linear-gradient(62deg, rgba(0,123,255,1) 32%, rgba(0,86,179,1) 78%);
             border: none;
-            padding: 15px 20px 15px;
-            border-radius: 6px;
-            font-family: inter;
-            font-size: 15px;
-            margin-top: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 40px;
+            display: flex;
+            width: 320px;
+            box-shadow: rgb(0,123,255) 0px 5px 15px;
         }
-        .right{
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            width: 400px;
-            border-radius: 406px;
-            margin-bottom: 40px;
+        button:hover{
+            animation: ;
+        }
+        .overlay:target button{
+  animation: popup 0.7s;
+}
+        @keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  60%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+        button span img{
+            margin-top: 16px;
+            margin-left: 10px;
+        }
+        button h1{
+            color: white;
+            font-family: poppins;
+            font-size: 19px;
+            font-weight: bold;
+            margin-left: 8px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <h1>Raffa Hitipeuw</h1>
-            <p>Discover amazing experiences, exceptional designs, and transformative solutions tailored</p>
-            <p id="">just for you</p>
-            <div class="leftimage">
-                <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/128/3128/3128219.png" alt="">
-            </div>
-            <button>Explore Now</button>
+    
+    <main>
+        <div class="imagee">
+            <img src="photo-1549298916-b41d501d3772.avif" alt="" width="350px">
         </div>
-        <div class="right">
-            <img src="https://i.ibb.co.com/5Y22Wt2/Logo-Has-To-Be-Someone.png" alt="">
-        </div>
-    </header>
+        <h1>Produk Premium</h1>
+        <h2>Rp 250.000</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem praesentium aperiam obcaecati natus voluptates ipsa neque,</p>
+        <button onclick="button()" id="button"><span><img src="image.png" alt="" width="20px"></span><h1>Tambahkan Ke Keranjang</h1></button>
+    </main>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
