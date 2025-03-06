@@ -8,6 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         main{
+            cursor:pointer;
             background-color: #484444;
             width: 400px;
             height: 650px;
@@ -45,7 +46,7 @@
             margin-right: 30px;
             margin-top: -10px;
         }
-        button{
+        #outsidebutton button{
             background: rgb(0,123,255);
             background: linear-gradient(62deg, rgba(0,123,255,1) 32%, rgba(0,86,179,1) 78%);
             border: none;
@@ -56,34 +57,13 @@
             width: 320px;
             box-shadow: rgb(0,123,255) 0px 5px 15px;
         }
-        button:hover{
-            animation: ;
-        }
-        .overlay:target button{
-  animation: popup 0.7s;
-}
-        @keyframes popup {
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.4);
-  }
-  60%{
-    transform: scale(1.1);
-  }
-  70%{
-    transform: scale(1.2);
-  }
-  80%{
-    transform: scale(1);
-  }
-  90%{
-    transform: scale(1.1);
-  }
-  100%{
-    transform: scale(1);
-  }
+        #pop:hover{
+  animation: pop 70s linear 2;
+} 
+@keyframes pop{
+  0%   {transform: scale(1.1);}
+  50%  {transform: scale(1.1);}
+  100% {transform: scale(1.1);}
 }
         button span img{
             margin-top: 16px;
@@ -107,7 +87,12 @@
         <h1>Produk Premium</h1>
         <h2>Rp 250.000</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem praesentium aperiam obcaecati natus voluptates ipsa neque,</p>
-        <button onclick="button()" id="button"><span><img src="image.png" alt="" width="20px"></span><h1>Tambahkan Ke Keranjang</h1></button>
+        <div id="pop">
+            <div id="outsidebutton">
+                <button onclick="button()" id="button"> <span><img src="image.png" alt="" width="20px" ></span> <h1>Tambahkan Ke Keranjang</h1></button>
+            </div>
+        </div>
+
     </main>
 
 
